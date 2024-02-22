@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Craggle</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div id="top-title">
+        <img id="header-logo" src="images/craggle-logo.png" alt="logo">
+        <h2>Craggle</h2>
+      </div>
+      <div class="navigation-menu">
+        <div class="nav-button">
+          <span class="material-symbols-outlined nav-icon">group</span>
+          <p class="nav-text">Climbers</p>
+        </div>
+        <div class="nav-button">
+          <span class="material-symbols-outlined nav-icon">location_on</span>
+          <p class="nav-text">Places</p>
+        </div>
+        <div class="nav-button">
+          <span class="material-symbols-outlined nav-icon">chat_bubble</span>
+          <p class="nav-text">Chat</p>
+        </div>
+        <div class="nav-button">
+          <span class="material-symbols-outlined nav-icon">account_circle</span>
+          <p class="nav-text">Profile</p>
+        </div>
+      </div>
+    </nav>
+
+    <div id="page-title">
+      <div class="page-controls">
+        <h1>Find Climbers</h1>
+        <span class="material-symbols-outlined" id="filter-icon">tune</span>
+      </div>
+      <p>Narrow your filters and click through climbers in your area.</p>
+    </div>
+
+  </header>
+
+  <main>
+    <div class="carousel-wrapper">
+      <span class="material-symbols-outlined arrow" id="back-arrow">arrow_back</span>
+      <span class="material-symbols-outlined arrow" id="forward-arrow">arrow_forward</span>
+      <article class="carousel">
+        <article class="climber-card">
+          <div class="climber-image-container">
+            <p class="climber-grade"><span class="material-symbols-outlined">elevation</span>6b-6c</p>
+            <div class="online-status online"></div>
+            <img class="climber-image" src="images/Dave.png" alt="Dave">
+          </div>
+          <div class="climber-info">
+            <div class="basic-info">
+              <h3 class="climber-name">Dave</h3>
+              <p class="experience-level-Advanced">Advanced</p>
+            </div>
+            <p class="bio">Looking for those who want to push themselves 💪🏼 💪🏼 💪🏼</p>
+          </div>
+        </article>
+
+        <article class="climber-card">
+          <div class="climber-image-container">
+            <p class="climber-grade">
+              <span class="material-symbols-outlined">elevation</span>
+              5b-5c
+            </p>
+            <div class="online-status offline"></div>
+            <img class="climber-image" src="images/Sarah.png" alt="Sarah">
+          </div>
+          <div class="climber-info">
+            <div class="basic-info">
+              <h3 class="climber-name">Sarah</h3>
+              <p id="Intermediate" class="experience-level-Intermediate">Intermediate</p>
+            </div>
+            <p class="bio">I’m looking for a chill climb with time for chatting and maybe a drink after.</p>
+          </div>
+        </article>
+
+        <article class="climber-card">
+          <div class="climber-image-container">
+            <p class="climber-grade"><span class="material-symbols-outlined">elevation</span>4b-4c</p>
+            <div class="online-status online"></div>
+            <img class="climber-image" src="images/Nami.png" alt="Nami">
+          </div>
+          <div class="climber-info">
+            <div class="basic-info">
+              <h3 class="climber-name">Nami</h3>
+              <p class="experience-level-Beginner">Beginner</p>
+            </div>
+            <p class="bio">New to outdoor climbing so want someone to show me the ropes (ha!)</p>
+          </div>
+        </article>
+
+        <article class="climber-card">
+          <div class="climber-image-container">
+            <p class="climber-grade"><span class="material-symbols-outlined">elevation</span>5a-5b</p>
+            <div class="online-status online"></div>
+            <img class="climber-image" src="images/Catriona.png" alt="Catriona">
+          </div>
+          <div class="climber-info">
+            <div class="basic-info">
+              <h3 class="climber-name">Catriona</h3>
+              <p class="experience-level-Intermediate">Intermediate</p>
+            </div>
+            <p class="bio">I want to meet people and try some new crags! 😺</p>
+          </div>
+        </article>
+
+        <article class="climber-card">
+          <div class="climber-image-container">
+            <p class="climber-grade"><span class="material-symbols-outlined">elevation</span>6a-6b</p>
+            <div class="online-status offline"></div>
+            <img class="climber-image" src="images/Joel.png" alt="Joel">
+          </div>
+          <div class="climber-info">
+            <div class="basic-info">
+              <h3 class="climber-name">Joel</h3>
+              <p id="Advanced" class="experience-level-Advanced">Advanced</p>
+            </div>
+            <p class="bio">Fellow spidey-gang, let’s go! I want to climb the biggest and toughest.</p>
+          </div>
+        </article>
+      </article>
+    </div>
+  </main>
+  <div id="climber-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-button">&times;</span>
+      <div class="modal-header">
+        <h2 class="modal-title">Climber Name</h2>
+        <div>
+          <p class="experience-level-Advanced">Advanced</p>
+        </div>
+
+      </div>
+      <div class="modal-body">
+
+        <div class="profile">
+          <div class="climber-grade">
+            <span class="material-symbols-outlined">elevation</span>
+            <p class="modal-grade">Climber Grade</p>
+          </div>
+
+          <img class="modal-image" src="" alt="Climber Image">
+          <div class="information">
+            <div class="pills">
+              <span class="material-symbols-outlined"> location_on</span>
+              <p>Stockholm</p>
+            </div>
+            <div class="pills">
+              <span class="material-symbols-outlined">cake</span>
+              <p>35</p>
+            </div>
+            <div class="pills">
+              <span class="material-symbols-outlined">transgender</span>
+              <p>male</p>
+            </div>
+            <div class="pills">
+              <span class="material-symbols-outlined">fitness_center</span>
+              <p>65 kgs</p>
+            </div>
+          </div>
+          <div class="bio-modal">
+            <p class="modal-bio">Climber bio will go here...</p>
+            <button class="friends">
+              <span class="material-symbols-outlined"> people</span>
+              <p>44 ppl</p>
+            </button>
+          </div>
+
+        </div>
+        <div class="card-Gear">
+          <ul class="list">
+            <h2 class="list-header">Gear</h2>
+            <li class="list-item">
+              <div class="category">
+                <span class="material-symbols-outlined"> home_repair_service</span>
+                <p>Belay</p>
+              </div>
+              <p>Tubular (ATC)</p>
+            </li>
+            <li class="list-item">
+              <div class="category">
+                <span class="material-symbols-outlined"> home_repair_service</span>
+                <p>rope</p>
+              </div>
+              <p class="yes">40m</p>
+            </li>
+            <li class="list-item">
+              <div class="category">
+                <span class="material-symbols-outlined"> home_repair_service</span>
+                <p>Harness</p>
+              </div>
+              <p class="yes">yes</p>
+            </li>
+            <li class="list-item">
+              <div class="category">
+                <span class="material-symbols-outlined"> home_repair_service</span>
+                <p>Chalk bag</p>
+              </div>
+              <p class="yes">yes</p>
+            </li>
+            <li class="list-item">
+              <div class="category">
+                <span class="material-symbols-outlined"> home_repair_service</span>
+                <p>PAS</p>
+              </div>
+              <p class="yes">yes</p>
+            </li>
+            <li class="list-item">
+              <div class="category">
+                <span class="material-symbols-outlined"> home_repair_service</span>
+                <p>Climbing shoes</p>
+              </div>
+
+              <p>yes</p>
+            </li>
+          </ul>
+        </div>
+        <div class="card-Experience">
+          <ul class="list">
+            <h2 class="list-header">Experience</h2>
+            <li class="list-item">
+              <div class="category">
+                <span class="material-symbols-outlined"> home_repair_service</span>
+                <p>Indoor climbing</p>
+              </div>
+              <p>yes</p>
+            </li>
+            <li class="list-item">
+              <div class="category">
+                <span class="material-symbols-outlined"> home_repair_service</span>
+                <p>Outdoor climbing</p>
+              </div>
+              <p>yes</p>
+            </li>
+            <li class="list-item">
+              <div class="category">
+                <span class="material-symbols-outlined"> home_repair_service</span>
+                <p>Leading</p>
+              </div>
+              <p>yes</p>
+            </li>
+            <li class="list-item">
+              <div class="category">
+                <span class="material-symbols-outlined"> home_repair_service</span>
+                <p>Cleaning</p>
+              </div>
+              <p>yes</p>
+            </li>
+          </ul>
+          <div class="card-experience">
+            <h2 class="list-header">Qualification</h2>
+            <div class="Experience">
+              <div class="badge-item">
+                <div class="card">
+                  <span class="material-symbols-outlined"> badge</span>
+                  <p>Green Card</p>
+                </div>
+              </div>
+              <div class="badge-item">
+                <div class="card">
+                  <span class="material-symbols-outlined"> badge</span>
+                  <p>Red Card</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+  </div>
+
+
+
+  <footer></footer>
+</body>
+
+</html>
